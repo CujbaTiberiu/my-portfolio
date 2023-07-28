@@ -20,7 +20,7 @@ const Skills = () => {
     <div name="skills" className="w-full xs:my-44 sm:my-44 md:my-36">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-3/4 h-full">
         <div className="text-white">
-          <p className="my-4 font-bold text-3xl border-b w-20 border-teal-700 sm:w-20 hover:text-4xl hover:w-48 duration-500">
+          <p className="font-bold text-3xl border-b-4 w-20 border-teal-700 sm:w-20 hover:text-4xl hover:w-48 duration-500">
             Skills
           </p>
           <p className="text-xl text-gray-400">

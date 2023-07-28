@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import { ImMenu3, ImMenu4 } from "react-icons/im";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { RiPagesLine } from "react-icons/ri";
+import { RiPagesLine, RiUserVoiceFill } from "react-icons/ri";
+import { GiSkills } from "react-icons/gi";
+import { MdOutlineDeveloperMode } from "react-icons/md";
+import { TiContacts } from "react-icons/ti";
 import Typed from "react-typed";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -14,14 +18,38 @@ const Navbar = () => {
   return (
     <div className="w-full flex justify-between items-center h-20 text-white px-4 shadow-md shadow-teal-700">
       <Typed
-        className="w-1/2 text-3xl font-bold text-emerald-700 bg-[#000300]"
+        className="w-[19%] text-3xl font-bold text-emerald-700 bg-[#000300]"
         strings={["Welcome to", "My Portfolio"]}
         typeSpeed={200}
         backSpeed={50}
         loop
       />
       {/* <h1 className="w-full text-3xl font-bold text-emerald-700">Portfolio</h1> */}
-      <ul className="flex hidden md:flex">
+      <ul className="flex hidden lg:flex">
+        <Link to="hero" smooth={true} duration={500}>
+          <li className="p-4 flex hover:border-b border-b-teal-700 hover:text-teal-700 duration-100">
+            {" "}
+            <RiUserVoiceFill className="mt-1 mx-1" /> About me
+          </li>
+        </Link>
+        <Link to="skills" smooth={true} duration={500}>
+          <li className="p-4 flex hover:border-b border-b-teal-700 hover:text-teal-700 duration-100">
+            {" "}
+            <GiSkills className="mt-1 mx-1" /> Skills
+          </li>
+        </Link>
+        <Link to="demos" smooth={true} duration={500}>
+          <li className="p-4 flex hover:border-b border-b-teal-700 hover:text-teal-700 duration-100">
+            {" "}
+            <MdOutlineDeveloperMode className="mt-1 mx-1" /> My Work
+          </li>
+        </Link>
+        <Link to="form" smooth={true} duration={500}>
+          <li className="p-4 flex hover:border-b border-b-teal-700 hover:text-teal-700 duration-100">
+            {" "}
+            <TiContacts className="mt-1 mx-1" /> Contact
+          </li>
+        </Link>
         <li className="p-4 flex hover:border-b border-b-yellow-500 hover:text-yellow-500 duration-100">
           {" "}
           <RiPagesLine className="mt-1 mx-1" /> Resume
@@ -41,27 +69,47 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
-      <div onClick={handleNav} className="md:hidden">
+      <div onClick={handleNav} className="lg:hidden">
         {!nav ? <ImMenu4 size={30} /> : <ImMenu3 size={30} />}
       </div>
       <div
         className={
           !nav
             ? "fixed right-[-100%]"
-            : "fixed right-0 top-0 w-[35%] h-[60%] border-l border-l-teal-700 mt-24 ease-in-out duration-500"
+            : "fixed right-0 top-0 w-[35%] h-[70%] border-l border-l-teal-700 mt-24 ease-in-out duration-500 first-letter:"
         }
       >
         <ul className="mt-4 uppercase">
-          <li className="p-4 border-b border-b-teal-700 w-32 m-2 flex hover:w-40 duration-200  hover:text-yellow-500">
+          <Link to="hero" smooth={true} duration={500}>
+            <li className="p-4 border-b border-b-teal-700 w-36 m-2 flex hover:w-44 duration-200  hover:text-teal-700">
+              <RiUserVoiceFill className="mt-1 mx-1" /> About me
+            </li>
+          </Link>
+          <Link to="skills" smooth={true} duration={500}>
+            <li className="p-4 border-b border-b-teal-700 w-36 m-2 flex hover:w-44 duration-200  hover:text-teal-700">
+              <GiSkills className="mt-1 mx-1" /> Skills
+            </li>
+          </Link>
+          <Link to="demos" smooth={true} duration={500}>
+            <li className="p-4 border-b border-b-teal-700 w-36 m-2 flex hover:w-44 duration-200  hover:text-teal-700">
+              <MdOutlineDeveloperMode className="mt-1 mx-1" /> My Work
+            </li>
+          </Link>
+          <Link to="form" smooth={true} duration={500}>
+            <li className="p-4 border-b border-b-teal-700 w-36 m-2 flex hover:w-44 duration-200  hover:text-teal-700">
+              <TiContacts className="mt-1 mx-1" /> Contact
+            </li>
+          </Link>
+          <li className="p-4 border-b border-b-teal-700 w-36 m-2 flex hover:w-44 duration-200  hover:text-yellow-500">
             <RiPagesLine className="mt-1 mx-1" /> Resume
           </li>
           <a href="https://github.com/CujbaTiberiu">
-            <li className="p-4 border-b border-b-teal-700 w-32 m-2 flex hover:w-40 duration-200 hover:text-gray-700">
+            <li className="p-4 border-b border-b-teal-700 w-36 m-2 flex hover:w-44 duration-200 hover:text-gray-700">
               <AiFillGithub className="mt-1 mx-1" /> GitHub
             </li>
           </a>
           <a href="https://www.linkedin.com/in/tiberiu-stefan-cujba/">
-            <li className="p-4 border-b border-b-teal-700 w-32 m-2 flex hover:w-40 duration-200 hover:text-sky-600">
+            <li className="p-4 border-b border-b-teal-700 w-36 m-2 flex hover:w-44 duration-200 hover:text-sky-600">
               <AiFillLinkedin className="mt-1 mx-1" /> Linkedin
             </li>
           </a>
