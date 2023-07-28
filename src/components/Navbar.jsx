@@ -50,10 +50,12 @@ const Navbar = () => {
             <TiContacts className="mt-1 mx-1" /> Contact
           </li>
         </Link>
-        <li className="p-4 flex hover:border-b border-b-yellow-500 hover:text-yellow-500 duration-100">
-          {" "}
-          <RiPagesLine className="mt-1 mx-1" /> Resume
-        </li>
+        <Link to="certificate" smooth={true} duration={500}>
+          <li className="p-4 flex hover:border-b border-b-yellow-500 hover:text-yellow-500 duration-100">
+            {" "}
+            <RiPagesLine className="mt-1 mx-1" /> Certificate
+          </li>
+        </Link>
         <li className="p-4 hover:border-b border-b-gray-700 hover:text-gray-700 duration-100">
           <a href="https://github.com/CujbaTiberiu" className="flex">
             {" "}
@@ -100,9 +102,11 @@ const Navbar = () => {
               <TiContacts className="mt-1 mx-1" /> Contact
             </li>
           </Link>
-          <li className="p-4 border-b border-b-teal-700 w-36 m-2 flex hover:w-44 duration-200  hover:text-yellow-500">
-            <RiPagesLine className="mt-1 mx-1" /> Resume
-          </li>
+          <Link to="certificate" smooth={true} duration={500}>
+            <li className="p-4 border-b border-b-teal-700 w-36 m-2 flex hover:w-44 duration-200  hover:text-yellow-500">
+              <RiPagesLine className="mt-1 mx-1" /> Certificate
+            </li>
+          </Link>
           <a href="https://github.com/CujbaTiberiu">
             <li className="p-4 border-b border-b-teal-700 w-36 m-2 flex hover:w-44 duration-200 hover:text-gray-700">
               <AiFillGithub className="mt-1 mx-1" /> GitHub

@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Skills from './components/Skills';
 import Demos from './components/Demos';
 import Form from './components/Form';
+import Certificate from './components/Certificate';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <Skills />
       <Demos />
+      <Certificate />
       <Form />
     </div>
   );
