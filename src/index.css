@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #000300;
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap');
+
+@layer {
+  body {
+    @apply font-[Sen];
+    background-color: #000300;
+  }
+}
+
+.content-div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+
+.content-div:hover {
+  background-image: linear-gradient(to right,
+      rgba(11, 109, 77, 0.8),
+      hsla(214, 85%, 45%, 0.8)) !important;
 }

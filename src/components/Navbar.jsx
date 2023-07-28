@@ -12,9 +12,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center h-20 text-white px-4">
+    <div className="w-full flex justify-between items-center h-20 text-white px-4 shadow-md shadow-teal-700">
       <Typed
-        className="w-full text-3xl font-bold text-emerald-700 bg-[#000300]"
+        className="w-1/2 text-3xl font-bold text-emerald-700 bg-[#000300]"
         strings={["Welcome to", "My Portfolio"]}
         typeSpeed={200}
         backSpeed={50}
@@ -22,17 +22,17 @@ const Navbar = () => {
       />
       {/* <h1 className="w-full text-3xl font-bold text-emerald-700">Portfolio</h1> */}
       <ul className="flex hidden md:flex">
-        <li className="p-4 flex hover:mb-2 hover:text-yellow-500 duration-100">
+        <li className="p-4 flex hover:border-b border-b-yellow-500 hover:text-yellow-500 duration-100">
           {" "}
           <RiPagesLine className="mt-1 mx-1" /> Resume
         </li>
-        <li className="p-4 hover:mb-2 hover:text-emerald-700 duration-100">
+        <li className="p-4 hover:border-b border-b-gray-700 hover:text-gray-700 duration-100">
           <a href="https://github.com/CujbaTiberiu" className="flex">
             {" "}
             <AiFillGithub className="mt-1 mx-1" /> GitHub
           </a>
         </li>
-        <li className="p-4 hover:mb-2 hover:text-sky-600 duration-100">
+        <li className="p-4 hover:border-b border-b-sky-600 hover:text-sky-600 duration-100">
           <a
             href="https://www.linkedin.com/in/tiberiu-stefan-cujba/"
             className="flex"
@@ -56,7 +56,7 @@ const Navbar = () => {
             <RiPagesLine className="mt-1 mx-1" /> Resume
           </li>
           <a href="https://github.com/CujbaTiberiu">
-            <li className="p-4 border-b border-b-teal-700 w-32 m-2 flex hover:w-40 duration-200 hover:text-emerald-700">
+            <li className="p-4 border-b border-b-teal-700 w-32 m-2 flex hover:w-40 duration-200 hover:text-gray-700">
               <AiFillGithub className="mt-1 mx-1" /> GitHub
             </li>
           </a>
