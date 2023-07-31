@@ -4,7 +4,7 @@ const Form = () => {
   return (
     <div
       name="form"
-      className="w-full xs:my-44 sm:my-44 md:my-36 flex justify-center items-center p-4"
+      className="w-full xs:py-44 sm:py-44 md:py-36 flex justify-center items-center p-4"
     >
       <form
         method="POST"

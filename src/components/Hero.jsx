@@ -3,7 +3,7 @@ import Me from "../assets/imgs/me3.jpg";
 
 const Hero = () => {
   return (
-    <div name="hero" className="w-full xs:my-44 sm:my-44 md:my-36">
+    <div name="hero" className="w-full xs:py-44 sm:py-44 md:py-36">
       <div className="text-white h-full">
         <div className="w-full grid lg:grid-cols-2">
           <div className="flex justify-center">

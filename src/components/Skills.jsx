@@ -17,7 +17,7 @@ import ECLIPSE from "../assets/imgs/eclipse.png";
 
 const Skills = () => {
   return (
-    <div name="skills" className="w-full xs:my-44 sm:my-44 md:my-36">
+    <div name="skills" className="w-full xs:py-44 sm:py-44 md:py-36">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-3/4 h-full">
         <div className="text-white">
           <p className="font-bold text-3xl border-b-4 w-20 border-teal-700 sm:w-20 hover:text-4xl hover:w-48 duration-500">
