@@ -109,7 +109,7 @@ const Navbar = () => {
           <Link to="certificate" smooth={true} duration={500}>
             <li
               onClick={handleNav}
-              className="p-4 border-b border-b-teal-700 w-36 m-2 flex hover:w-44 duration-200  hover:text-fuchsia-800"
+              className="p-4 border-b border-b-teal-700 w-40 m-2 flex hover:w-44 duration-200  hover:text-fuchsia-800"
             >
               <RiPagesLine className="mt-1 mx-1" /> Certificate
             </li>

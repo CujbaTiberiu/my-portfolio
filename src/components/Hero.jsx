@@ -25,7 +25,7 @@ const Hero = () => {
                 </p>
               </div>
               <div className="mx-4 my-2 gap-4 hover:text-teal-700">
-                <p>Jannuary 2011 - July 2016</p>
+                <p>January 2011 - July 2016</p>
                 <p>Economics & Bussines High School</p>
               </div>
               <div className="mx-4 my-2 gap-4 hover:text-teal-700">
