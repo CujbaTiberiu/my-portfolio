@@ -1,5 +1,6 @@
 import React from "react";
 import Me from "../assets/imgs/me3.jpg";
+import Cv from "./Cv";
 //xs:py-44 sm:py-44 md:py-36
 const Hero = () => {
   return (
@@ -50,6 +51,9 @@ const Hero = () => {
                 <div className="mx-4 my-2 gap-4 hover:text-sky-800">
                   <p>January 2011 - July 2016</p>
                   <p>Economics & Bussines High School</p>
+                </div>
+                <div>
+                  <Cv />
                 </div>
               </div>
             </div>
