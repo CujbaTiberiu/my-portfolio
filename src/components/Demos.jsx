@@ -1,9 +1,16 @@
-import React from "react";
+import { useState } from "react";
 import COMUNICATE from "../assets/imgs/com.jpg";
 import SPOTIFY from "../assets/imgs/spotify.jpg";
 import METEO from "../assets/imgs/meteo.jpg";
+import SHOPSTER from "../assets/imgs/Shopster.png";
+import SHOPSTERVideo from "../assets/vids/Shopster.mp4";
 
 const Demos = () => {
+  const [showVideo, setShowVideo] = useState(false);
+
+  const toggleVideo = () => {
+    setShowVideo(!showVideo);
+  };
   return (
     <div name="demos" className="pt-1 lg:pt-0 xl:h-screen">
       <div className="w-full my-24 sm:my-16 md:py-16 lg:py-28">
@@ -124,6 +131,61 @@ const Demos = () => {
                       Live
                     </button>
                   </a>
+                </div>
+              </div>
+            </div>
+            <div
+              style={{
+                backgroundImage: `url(${SHOPSTER})`,
+                position: "relative",
+              }}
+              className="shadow-lg shadow-sky-800 group container rounded-md
+              flex justify-center text-center items-center mx-auto content-div "
+            >
+              {/* Video Preview */}
+              {showVideo && (
+                <video
+                  onClick={toggleVideo}
+                  autoPlay
+                  loop
+                  playsInline
+                  style={{
+                    position: "absolute",
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    cursor: "pointer",
+                  }}
+                >
+                  <source src={SHOPSTERVideo} type="video/mp4" />{" "}
+                </video>
+              )}
+              {/* Hover effect for images */}
+              <div className="opacity-0 group-hover:opacity-100 ">
+                <span className="text-2xl font bold text-white tracking-wider ">
+                  Shopster E-commerce
+                </span>
+                <div className="pt-8 text-center ">
+                  {/* eslint-disable-next-line */}
+                  <a
+                    href="https://github.com/CujbaTiberiu/Shopster"
+                    target="_blank"
+                  >
+                    <button
+                      className="text-center rounded-lg px-4 py-3 m-2
+                       bg-white text-gray-700 font-bold text-lg"
+                    >
+                      Code
+                    </button>
+                  </a>
+                  {/* eslint-disable-next-line */}
+                  <button
+                    onClick={toggleVideo}
+                    className="text-center rounded-lg px-4 py-3 m-2
+                       bg-white text-gray-700 font-bold text-lg"
+                  >
+                    Preview
+                  </button>
                 </div>
               </div>
             </div>

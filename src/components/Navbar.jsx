@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed top-0 w-full flex justify-between items-center h-20 text-white px-4 shadow-md shadow-sky-800 bg-black">
+    <div className="fixed top-0 w-full flex justify-between items-center h-20 text-white px-4 shadow-md shadow-sky-800 bg-black z-10">
       <Typed
         className="w-[70%] lg:w-[16%] text-3xl lg:text-2xl font-bold text-sky-800 bg-[#000300]"
         strings={["Welcome to", "My Portfolio"]}
