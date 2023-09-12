@@ -8,14 +8,14 @@ import Certificate from './components/Certificate';
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar />
       <Hero />
       <Skills />
       <Demos />
       <Certificate />
       <Form />
-    </div>
+    </>
   );
 }
 
