@@ -12,7 +12,7 @@ const Demos = () => {
     setShowVideo(!showVideo);
   };
   return (
-    <div name="demos" className="pt-1 lg:pt-0 xl:h-screen">
+    <div name="demos" className="pt-1 lg:pt-0 xxl:h-screen">
       <div className="w-full my-24 sm:my-16 md:py-16 lg:py-28">
         <div className="max-w-[1000px] w-3/4 mx-auto p-4 flex flex-col justify-center h-full sm:mt-0">
           <div className="pb-8">
@@ -44,7 +44,7 @@ const Demos = () => {
                   >
                     <button
                       className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
+                       bg-white text-gray-700 font-bold text-lg hover:bg-cyan-700 hover:text-white hover:translate-y-[-0.5rem] ease-in-out duration-500"
                     >
                       Code
                     </button>

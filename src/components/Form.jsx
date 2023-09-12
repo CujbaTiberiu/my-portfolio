@@ -33,7 +33,7 @@ const Form = () => {
             rows="10"
             placeholder="Message"
           ></textarea>
-          <button className="text-white border-2 border-sky-800 hover:bg-sky-800 hover:translate-y-[-0.5rem] duration-500 px-4 py-3 my-8 mx-auto flex items-center">
+          <button className="text-white animate-bounce border-2 border-sky-800 hover:bg-sky-800 hover:translate-y-[-0.5rem] duration-500 px-4 py-3 my-8 mx-auto flex items-center">
             Write Me
           </button>
         </form>
