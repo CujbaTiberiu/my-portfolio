@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import CSS from "../assets/imgs/css.png";
 import JS from "../assets/imgs/javascript.png";
 import BOOTSTRAP from "../assets/imgs/Bootstrap.png";
@@ -15,12 +15,23 @@ import GITHUB from "../assets/imgs/github.png";
 import VSC from "../assets/imgs/vsc.png";
 import ECLIPSE from "../assets/imgs/eclipse.png";
 import NEXT from "../assets/imgs/next.png";
+import { useScroll, motion, useTransform } from "framer-motion";
 
 const Skills = () => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "1.33 1"],
+  });
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
   return (
     <div name="skills" className="py-2 lg:pt-0 bg-slate-900 xxl:h-screen">
       <div className="w-full my-24 sm:my-16 md:py-12 lg:py-28">
-        <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-3/4 h-full">
+        <motion.div
+          ref={ref}
+          style={{ scale: scaleProgress, opacity: scrollYProgress }}
+          className="mx-auto p-4 flex flex-col justify-center w-3/4 h-full"
+        >
           <div className="text-white">
             <p className="font-bold text-3xl border-b-4 w-20 border-sky-800 sm:w-20 hover:text-4xl hover:w-48 duration-500">
               Skills
@@ -124,7 +135,7 @@ const Skills = () => {
               <p className="text-white py-2">ECLIPSE</p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

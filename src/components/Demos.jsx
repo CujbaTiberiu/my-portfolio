@@ -4,9 +4,37 @@ import SPOTIFY from "../assets/imgs/spotify.jpg";
 import METEO from "../assets/imgs/meteo.jpg";
 import SHOPSTER from "../assets/imgs/Shopster.png";
 import SHOPSTERVideo from "../assets/vids/Shopster.mp4";
+import { motion } from "framer-motion";
 
 const Demos = () => {
   const [showVideo, setShowVideo] = useState(false);
+
+  const fadeInAnimation = {
+    initial: {
+      opacity: 0,
+      y: -100,
+    },
+    animate: (seconds) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: seconds,
+      },
+    }),
+  };
+  const fadeInAnimationUp = {
+    initial: {
+      opacity: 0,
+      y: 100,
+    },
+    animate: (seconds) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: seconds,
+      },
+    }),
+  };
 
   const toggleVideo = () => {
     setShowVideo(!showVideo);
@@ -16,17 +44,33 @@ const Demos = () => {
       <div className="w-full my-24 sm:my-16 md:py-16 lg:py-28">
         <div className="max-w-[1000px] w-3/4 mx-auto p-4 flex flex-col justify-center h-full sm:mt-0">
           <div className="pb-8">
-            <p className="text-white font-bold text-3xl border-b-4 w-36 border-sky-800 hover:text-4xl hover:w-56 duration-500">
+            <motion.p
+              variants={fadeInAnimation}
+              initial="initial"
+              whileInView="animate"
+              custom={0.1}
+              className="text-white font-bold text-3xl border-b-4 w-36 border-sky-800 hover:text-4xl hover:w-56 duration-500"
+            >
               My Work
-            </p>
-            <p className="py-4 text-xl text-gray-400">
+            </motion.p>
+            <motion.p
+              variants={fadeInAnimation}
+              initial="initial"
+              whileInView="animate"
+              custom={0.2}
+              className="py-4 text-xl text-gray-400"
+            >
               Check out some of my work
-            </p>
+            </motion.p>
           </div>
 
           {/* container for projects */}
           <div className="grid sm:grid-cols-2 gap-4">
-            <div
+            <motion.div
+              variants={fadeInAnimation}
+              initial="initial"
+              whileInView="animate"
+              custom={0.8}
               style={{ backgroundImage: `url(${COMUNICATE})` }}
               className="shadow-lg shadow-sky-800 group container rounded-md
               flex justify-center text-center items-center mx-auto content-div "
@@ -53,15 +97,19 @@ const Demos = () => {
                   <a href="https://comuni-cate.netlify.app/" target="_blank">
                     <button
                       className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
+                      bg-white text-gray-700 font-bold text-lg hover:bg-cyan-700 hover:text-white hover:translate-y-[-0.5rem] ease-in-out duration-500"
                     >
                       Live
                     </button>
                   </a>
                 </div>
               </div>
-            </div>
-            <div
+            </motion.div>
+            <motion.div
+              variants={fadeInAnimationUp}
+              initial="initial"
+              whileInView="animate"
+              custom={1.2}
               style={{ backgroundImage: `url(${SPOTIFY})` }}
               className="shadow-lg shadow-sky-800 group container rounded-md
               flex justify-center text-center items-center mx-auto content-div "
@@ -79,7 +127,7 @@ const Demos = () => {
                   >
                     <button
                       className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
+                      bg-white text-gray-700 font-bold text-lg hover:bg-cyan-700 hover:text-white hover:translate-y-[-0.5rem] ease-in-out duration-500"
                     >
                       Code
                     </button>
@@ -91,15 +139,19 @@ const Demos = () => {
                   >
                     <button
                       className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
+                      bg-white text-gray-700 font-bold text-lg hover:bg-cyan-700 hover:text-white hover:translate-y-[-0.5rem] ease-in-out duration-500"
                     >
                       Live
                     </button>
                   </a>
                 </div>
               </div>
-            </div>
-            <div
+            </motion.div>
+            <motion.div
+              variants={fadeInAnimation}
+              initial="initial"
+              whileInView="animate"
+              custom={1}
               style={{ backgroundImage: `url(${METEO})` }}
               className="shadow-lg shadow-sky-800 group container rounded-md
               flex justify-center text-center items-center mx-auto content-div "
@@ -117,7 +169,7 @@ const Demos = () => {
                   >
                     <button
                       className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
+                      bg-white text-gray-700 font-bold text-lg hover:bg-cyan-700 hover:text-white hover:translate-y-[-0.5rem] ease-in-out duration-500"
                     >
                       Code
                     </button>
@@ -126,15 +178,19 @@ const Demos = () => {
                   <a href="https://my-meteo-app.netlify.app/" target="_blank">
                     <button
                       className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
+                      bg-white text-gray-700 font-bold text-lg hover:bg-cyan-700 hover:text-white hover:translate-y-[-0.5rem] ease-in-out duration-500"
                     >
                       Live
                     </button>
                   </a>
                 </div>
               </div>
-            </div>
-            <div
+            </motion.div>
+            <motion.div
+              variants={fadeInAnimationUp}
+              initial="initial"
+              whileInView="animate"
+              custom={1.4}
               style={{
                 backgroundImage: `url(${SHOPSTER})`,
                 position: "relative",
@@ -173,7 +229,7 @@ const Demos = () => {
                   >
                     <button
                       className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
+                      bg-white text-gray-700 font-bold text-lg hover:bg-cyan-700 hover:text-white hover:translate-y-[-0.5rem] ease-in-out duration-500"
                     >
                       Code
                     </button>
@@ -182,13 +238,13 @@ const Demos = () => {
                   <button
                     onClick={toggleVideo}
                     className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
+                    bg-white text-gray-700 font-bold text-lg hover:bg-cyan-700 hover:text-white hover:translate-y-[-0.5rem] ease-in-out duration-500"
                   >
                     Preview
                   </button>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
