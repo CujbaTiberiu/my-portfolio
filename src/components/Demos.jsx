@@ -153,7 +153,7 @@ const Demos = () => {
               variants={fadeInAnimation}
               initial="initial"
               whileInView="animate"
-              custom={1}
+              custom={1.5}
               style={{ backgroundImage: `url(${METEO})` }}
               className="shadow-lg shadow-sky-800 group container rounded-md
               flex justify-center text-center items-center mx-auto content-div "
@@ -290,7 +290,7 @@ const Demos = () => {
               variants={fadeInAnimation}
               initial="initial"
               whileInView="animate"
-              custom={1}
+              custom={1.6}
               style={{ backgroundImage: `url(${APP})`, backgroundSize: "contain"}}
               className="shadow-lg shadow-sky-800 group container rounded-md
               flex justify-center text-center items-center mx-auto content-div bg-[#32b9be]"

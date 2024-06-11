@@ -15,6 +15,9 @@ import GITHUB from "../assets/imgs/github.png";
 import VSC from "../assets/imgs/vsc.png";
 import ECLIPSE from "../assets/imgs/eclipse.png";
 import NEXT from "../assets/imgs/next.png";
+import EXPO from "../assets/imgs/expo.png";
+import SUPABASE from "../assets/imgs/supabase.png";
+import PRISMA from "../assets/imgs/prisma.png";
 import { useScroll, motion, useTransform } from "framer-motion";
 
 const Skills = () => {
@@ -59,8 +62,24 @@ const Skills = () => {
               <p className="text-white py-2">REACT</p>
             </div>
             <div className="shadow-md shadow-sky-800 hover:scale-110 duration-500">
+              <img className="w-20 mx-auto pt-4" src={REACT} alt="react native logo" />
+              <p className="text-white py-2">REACT NATIVE</p>
+            </div>
+            <div className="shadow-md shadow-sky-800 hover:scale-110 duration-500">
+              <img className="w-20 mx-auto pt-4" src={EXPO} alt="expo logo" />
+              <p className="text-white py-2">EXPO</p>
+            </div>
+            <div className="shadow-md shadow-sky-800 hover:scale-110 duration-500">
               <img className="w-20 mx-auto pt-4" src={NEXT} alt="nextjs logo" />
-              <p className="text-white py-2">Next</p>
+              <p className="text-white py-2">NEXT</p>
+            </div>
+            <div className="shadow-md shadow-sky-800 hover:scale-110 duration-500">
+              <img className="w-20 mx-auto pt-4" src={SUPABASE} alt="supabase logo" />
+              <p className="text-white py-2">SUPABASE</p>
+            </div>
+            <div className="shadow-md shadow-sky-800 hover:scale-110 duration-500">
+              <img className="w-20 mx-auto pt-4" src={PRISMA} alt="prisma orm logo" />
+              <p className="text-white py-2">PRISMA</p>
             </div>
             <div className="shadow-md shadow-sky-800 hover:scale-110 duration-500">
               <img

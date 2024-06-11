@@ -79,6 +79,36 @@ const Hero = () => {
                     whileInView="animate"
                     custom={0.6}
                   >
+                    November 2023 - April 2024
+                  </motion.p>
+                  <motion.p
+                    variants={fadeInAnimation}
+                    initial="initial"
+                    whileInView="animate"
+                    custom={0.7}
+                  >
+                    Internship as front-end developer at{" "}
+                    <motion.a
+                      variants={fadeInAnimation}
+                      initial="initial"
+                      whileInView="animate"
+                      custom={0.7}
+                      className="hover:text-fuchsia-800"
+                      href="https://www.esimple.it/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      eSimple
+                    </motion.a>
+                  </motion.p>
+                </div>
+                <div className="mx-4 my-2 gap-4 hover:text-sky-800">
+                  <motion.p
+                    variants={fadeInAnimation}
+                    initial="initial"
+                    whileInView="animate"
+                    custom={0.6}
+                  >
                     January 2023 - August 2023
                   </motion.p>
                   <motion.p
