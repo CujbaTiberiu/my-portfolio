@@ -4,6 +4,8 @@ import SPOTIFY from "../assets/imgs/spotify.jpg";
 import METEO from "../assets/imgs/meteo.jpg";
 import SHOPSTER from "../assets/imgs/Shopster.png";
 import SHOPSTERVideo from "../assets/vids/Shopster.mp4";
+import SUITS from "../assets/imgs/Suits.png";
+import APP from "../assets/imgs/app.png";
 import { motion } from "framer-motion";
 
 const Demos = () => {
@@ -242,6 +244,84 @@ const Demos = () => {
                   >
                     Preview
                   </button>
+                </div>
+              </div>
+            </motion.div>
+            <motion.div
+              variants={fadeInAnimation}
+              initial="initial"
+              whileInView="animate"
+              custom={1}
+              style={{ backgroundImage: `url(${SUITS})` }}
+              className="shadow-lg shadow-sky-800 group container rounded-md
+              flex justify-center text-center items-center mx-auto content-div "
+            >
+              {/* Hover effect for images */}
+              <div className="opacity-0 group-hover:opacity-100 ">
+                <span className="text-2xl font bold text-white tracking-wider ">
+                Suits inspired showcase site
+                </span>
+                <div className="pt-8 text-center ">
+                  {/* eslint-disable-next-line */}
+                  <a
+                    href="https://github.com/CujbaTiberiu/Lawyers-studio-page-Suits---inspired-"
+                    target="_blank"
+                  >
+                    <button
+                      className="text-center rounded-lg px-4 py-3 m-2
+                      bg-white text-gray-700 font-bold text-lg hover:bg-cyan-700 hover:text-white hover:translate-y-[-0.5rem] ease-in-out duration-500"
+                    >
+                      Code
+                    </button>
+                  </a>
+                  {/* eslint-disable-next-line */}
+                  <a href="https://suits-webpage-lawyer-studio.netlify.app/" target="_blank">
+                    <button
+                      className="text-center rounded-lg px-4 py-3 m-2
+                      bg-white text-gray-700 font-bold text-lg hover:bg-cyan-700 hover:text-white hover:translate-y-[-0.5rem] ease-in-out duration-500"
+                    >
+                      Live
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+            <motion.div
+              variants={fadeInAnimation}
+              initial="initial"
+              whileInView="animate"
+              custom={1}
+              style={{ backgroundImage: `url(${APP})`, backgroundSize: "contain"}}
+              className="shadow-lg shadow-sky-800 group container rounded-md
+              flex justify-center text-center items-center mx-auto content-div bg-[#32b9be]"
+            >
+              {/* Hover effect for images */}
+              <div className="opacity-0 group-hover:opacity-100 ">
+                <span className="text-2xl font bold text-white tracking-wider ">
+                  Multi-market app in ReactNative(Expo) - in progress
+                </span>
+                <div className="pt-8 text-center ">
+                  {/* eslint-disable-next-line */}
+                  {/* <a
+                    href=""
+                    target="_blank"
+                  > */}
+                    <button
+                      className="text-center rounded-lg px-4 py-3 m-2
+                      bg-white text-gray-700 font-bold text-lg hover:bg-cyan-700 hover:text-white hover:translate-y-[-0.5rem] ease-in-out duration-500 cursor-not-allowed"
+                    >
+                      Code
+                    </button>
+                  {/* </a> */}
+                  {/* eslint-disable-next-line */}
+                  {/* <a href="" target="_blank"> */}
+                    <button
+                      className="text-center rounded-lg px-4 py-3 m-2
+                      bg-white text-gray-700 font-bold text-lg hover:bg-cyan-700 hover:text-white hover:translate-y-[-0.5rem] ease-in-out duration-500 cursor-not-allowed"
+                    >
+                      Live
+                    </button>
+                  {/* </a> */}
                 </div>
               </div>
             </motion.div>
